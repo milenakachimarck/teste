@@ -104,4 +104,4 @@ document.addEventListener('DOMContentLoaded', () => {
         lightboxItems.forEach(item => {
             // Adiciona a classe 'is-hovered' (que ativa o zoom no CSS) quando o mouse ENTRA
             item.addEventListener('mouseenter', () => {
-                item.classList.add('is-hovered');
+                item.classList.add('is-hovered');}

@@ -1,173 +1,173 @@
 /* RESET E CONFIGURAÇÕES BÁSICAS */
 * {
-    margin: 0; /* Remove margens padrão de todos os elementos */
-    padding: 0; /* Remove preenchimentos (padding) padrão de todos os elementos */
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos no width/height total do elemento */
-    font-family: 'Lato', sans-serif; /* Define a fonte primária para todo o projeto */
+ margin: 0; /* Remove margens padrão de todos os elementos */
+ padding: 0; /* Remove preenchimentos (padding) padrão de todos os elementos */
+ box-sizing: border-box; /* Garante que padding e border sejam incluídos no width/height total do elemento */
+ font-family: 'Lato', sans-serif; /* Define a fonte primária para todo o projeto */
 }
 
 body {
-    background-color: #f0f0f0; /* Define um fundo cinza claro para o corpo da página */
+ background-color: #f0f0f0; /* Define um fundo cinza claro para o corpo da página */
 }
 header {
-    background-color: #ffffff; /* Fundo branco para o cabeçalho */
-    width: 100%; /* Ocupa a largura total da tela */
-    padding: 20px 0; /* Adiciona 20px de preenchimento vertical (topo e base) */
-    position: fixed; /* Fixa o cabeçalho no topo da viewport */
-    top: 0; /* Alinha o cabeçalho ao topo */
-    left: 0; /* Alinha o cabeçalho à esquerda */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos (alto z-index) */
-    border-bottom: 1px solid #eee; /* Adiciona uma linha divisória sutil na parte inferior */
+ background-color: #ffffff; /* Fundo branco para o cabeçalho */
+ width: 100%; /* Ocupa a largura total da tela */
+ padding: 20px 0; /* Adiciona 20px de preenchimento vertical (topo e base) */
+ position: fixed; /* Fixa o cabeçalho no topo da viewport */
+ top: 0; /* Alinha o cabeçalho ao topo */
+ left: 0; /* Alinha o cabeçalho à esquerda */
+ z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos (alto z-index) */
+ border-bottom: 1px solid #eee; /* Adiciona uma linha divisória sutil na parte inferior */
 }
 /* Estilo para a imagem de perfil no cabeçalho */
 .profile-icon {
-    width: 30px; /* Largura padrão da imagem de perfil */
-    height: 30px; /* Altura padrão da imagem de perfil */
-    border-radius: 50%; /* Transforma a imagem em um círculo */
-    object-fit: cover; /* Garante que a imagem preencha a área sem distorção */
-    margin-right: 10px; /* Espaço à direita do ícone */
-    border: 1px solid #eee; /* Borda sutil */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: transform 0.2s ease-in-out; /* Define uma transição suave para a propriedade 'transform' (para o zoom) */
+ width: 30px; /* Largura padrão da imagem de perfil */
+ height: 30px; /* Altura padrão da imagem de perfil */
+ border-radius: 50%; /* Transforma a imagem em um círculo */
+ object-fit: cover; /* Garante que a imagem preencha a área sem distorção */
+ margin-right: 10px; /* Espaço à direita do ícone */
+ border: 1px solid #eee; /* Borda sutil */
+ cursor: pointer; /* Muda o cursor para indicar que é clicável */
+ transition: transform 0.2s ease-in-out; /* Define uma transição suave para a propriedade 'transform' (para o zoom) */
 }
 
 .profile-icon.enlarged {
-    transform: scale(3); /* Aumenta o tamanho da imagem em 3x quando a classe 'enlarged' é ativada */
-    z-index: 1001; /* Coloca a imagem ampliada acima do cabeçalho fixo */
+ transform: scale(3); /* Aumenta o tamanho da imagem em 3x quando a classe 'enlarged' é ativada */
+ z-index: 1001; /* Coloca a imagem ampliada acima do cabeçalho fixo */
 }
 
 .navbar {
-    width: 95%; /* Largura da barra de navegação (95% da tela) */
-    max-width: 1300px; /* Limita a largura máxima */
-    margin: auto; /* Centraliza a barra de navegação horizontalmente */
-    display: flex; /* Habilita o Flexbox */
-    justify-content: space-between; /* Distribui os itens (logo, menu, social) com espaço entre eles */
-    align-items: center; /* Centraliza os itens verticalmente */
+ width: 95%; /* Largura da barra de navegação (95% da tela) */
+ max-width: 1300px; /* Limita a largura máxima */
+ margin: auto; /* Centraliza a barra de navegação horizontalmente */
+ display: flex; /* Habilita o Flexbox */
+ justify-content: space-between; /* Distribui os itens (logo, menu, social) com espaço entre eles */
+ align-items: center; /* Centraliza os itens verticalmente */
 }
 
 .logo {
-    display: flex; /* Habilita o Flexbox para alinhar o conteúdo do logo */
-    align-items: center; /* Centraliza verticalmente o ícone/texto do logo */
-    font-weight: 700; /* Fonte em negrito */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #111; /* Cor preta escura */
-    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
-    
+display: flex; /* Habilita o Flexbox para alinhar o conteúdo do logo */
+ align-items: center; /* Centraliza verticalmente o ícone/texto do logo */
+ font-weight: 700; /* Fonte em negrito */
+ font-size: 16px; /* Tamanho da fonte */
+ color: #111; /* Cor preta escura */
+ letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+ 
 }
 .logo span {
-    font-weight: 700; /* Define peso da fonte para o span (se houver) */
-    font-size: 16px; /* Define tamanho da fonte para o span */
-    color: #111; /* Cor do texto */
-    letter-spacing: 2px; /* Espaçamento entre as letras */
+ font-weight: 700; /* Define peso da fonte para o span (se houver) */
+ font-size: 16px; /* Define tamanho da fonte para o span */
+ color: #111; /* Cor do texto */
+ letter-spacing: 2px; /* Espaçamento entre as letras */
 }
 
 .menu {
-    list-style: none; /* Remove os marcadores de lista padrão */
-    display: flex; /* Habilita o Flexbox para alinhar os itens horizontalmente */
-    gap: 30px; /* Espaçamento de 30px entre os itens do menu */
-    flex-grow: 1; /* Permite que o menu ocupe o espaço restante na barra de navegação */
-    justify-content: center; /* Centraliza os links do menu dentro do espaço disponível */
-    margin: 0 40px; /* Margem horizontal para separar o menu do logo e dos ícones sociais */
+ list-style: none; /* Remove os marcadores de lista padrão */
+ display: flex; /* Habilita o Flexbox para alinhar os itens horizontalmente */
+ gap: 30px; /* Espaçamento de 30px entre os itens do menu */
+ flex-grow: 1; /* Permite que o menu ocupe o espaço restante na barra de navegação */
+ justify-content: center; /* Centraliza os links do menu dentro do espaço disponível */
+ margin: 0 40px; /* Margem horizontal para separar o menu do logo e dos ícones sociais */
 }
 
 .menu li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #333; /* Cor do texto do link */
-    font-size: 14px; /* Tamanho da fonte */
-    font-weight: 700; /* Negrito */
-    text-transform: uppercase; /* Converte o texto para maiúsculas */
-    padding: 5px 0; /* Preenchimento vertical (não afeta o layout do link, mas é um bom hábito) */
-    transition: color 0.3s; /* Transição suave na mudança de cor */
+ text-decoration: none; /* Remove o sublinhado dos links */
+ color: #333; /* Cor do texto do link */
+ font-size: 14px; /* Tamanho da fonte */
+ font-weight: 700; /* Negrito */
+ text-transform: uppercase; /* Converte o texto para maiúsculas */
+padding: 5px 0; /* Preenchimento vertical (não afeta o layout do link, mas é um bom hábito) */
+ transition: color 0.3s; /* Transição suave na mudança de cor */
 }
 
 .menu li a:hover {
-    color: #008080; /* Cor esverdeada (Teal) ao passar o mouse */
+ color: #008080; /* Cor esverdeada (Teal) ao passar o mouse */
 }
 
 .social {
-    font-size: 18px; /* Tamanho do ícone */
-    color: #333; /* Cor dos ícones sociais */
-    margin-left: 15px; /* Margem à esquerda */
-    transition: color 0.3s; /* Transição suave na mudança de cor */
-    display: flex; /* Habilita o Flexbox para alinhar os ícones */
-    align-items: center; /* Centraliza os ícones verticalmente */
-    gap: 15px; /* Espaçamento entre os ícones sociais */
+ font-size: 18px; /* Tamanho do ícone */
+ color: #333; /* Cor dos ícones sociais */
+ margin-left: 15px; /* Margem à esquerda */
+ transition: color 0.3s; /* Transição suave na mudança de cor */
+ display: flex; /* Habilita o Flexbox para alinhar os ícones */
+ align-items: center; /* Centraliza os ícones verticalmente */
+ gap: 15px; /* Espaçamento entre os ícones sociais */
 }
 
 .social i:hover {
-    color: #008080; /* Cor esverdeada (Teal) ao passar o mouse */
+ color: #008080; /* Cor esverdeada (Teal) ao passar o mouse */
 }
 
 /* --- SEÇÃO HERO (IMAGEM E TEXTO) --- */
 .hero {
-    height: 100vh; /* Ocupa 100% da altura da viewport (tela) */
-    background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a área */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
-    display: flex; /* Habilita o Flexbox para alinhar o conteúdo interno (text-box) */
-    align-items: center; /* Centraliza o conteúdo (text-box) verticalmente */
-    position: relative; /* Define um contexto de posicionamento para o pseudo-elemento ::before */
-    padding-left: 5%; /* Preenchimento à esquerda para afastar o texto */
-    transition: background-image 1s ease-in-out; /* Transição suave de 1s para troca de imagem de fundo (carrossel) */
+ height: 100vh; /* Ocupa 100% da altura da viewport (tela) */
+ background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a área */
+ background-position: center; /* Centraliza a imagem de fundo */
+ background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+ display: flex; /* Habilita o Flexbox para alinhar o conteúdo interno (text-box) */
+ align-items: center; /* Centraliza o conteúdo (text-box) verticalmente */
+ position: relative; /* Define um contexto de posicionamento para o pseudo-elemento ::before */
+ padding-left: 5%; /* Preenchimento à esquerda para afastar o texto */
+ transition: background-image 1s ease-in-out; /* Transição suave de 1s para troca de imagem de fundo (carrossel) */
 }
 .hero::before {
-    content: ''; /* Necessário para pseudo-elementos */
-    position: absolute; /* Posiciona o elemento de forma absoluta dentro do .hero */
-    top: 0; /* Alinha ao topo */
-    left: 0; /* Alinha à esquerda */
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-    background-color: rgba(0, 128, 128, 0.5); /* Overlay esverdeado (Teal) semitransparente (50% de opacidade) */
-    z-index: 0; /* Coloca o overlay atrás do conteúdo de texto */
+ content: ''; /* Necessário para pseudo-elementos */
+ position: absolute; /* Posiciona o elemento de forma absoluta dentro do .hero */
+ top: 0; /* Alinha ao topo */
+ left: 0; /* Alinha à esquerda */
+ width: 100%; /* Largura total */
+ height: 100%; /* Altura total */
+ background-color: rgba(0, 128, 128, 0.5); /* Overlay esverdeado (Teal) semitransparente (50% de opacidade) */
+ z-index: 0; /* Coloca o overlay atrás do conteúdo de texto */
 }
 .text-box {
-    position: relative; /* Define um contexto para z-index */
-    z-index: 2; /* Garante que o texto fique acima do overlay (z-index: 0) */
-    color: #ffffff; /* Cor de texto padrão (embora sobrescrita abaixo) */
-    max-width: 450px; /* Limita a largura da caixa de texto */
-    padding-top: 100px; /* Ajuste de padding para compensar o header fixo */
+ position: relative; /* Define um contexto para z-index */
+ z-index: 2; /* Garante que o texto fique acima do overlay (z-index: 0) */
+ color: #ffffff; /* Cor de texto padrão (embora sobrescrita abaixo) */
+ max-width: 450px; /* Limita a largura da caixa de texto */
+padding-top: 100px; /* Ajuste de padding para compensar o header fixo */
 }
 
 .main-title {
-    font-size: 60px; /* Tamanho grande do título principal */
-    font-weight: 900; /* Peso da fonte extra-negrito */
-    line-height: 1; /* Altura da linha apertada */
-    margin-bottom: 20px; /* Margem abaixo do título */
-    color: #111; /* Cor preta escura do título */
+ font-size: 60px; /* Tamanho grande do título principal */
+ font-weight: 900; /* Peso da fonte extra-negrito */
+ line-height: 1; /* Altura da linha apertada */
+ margin-bottom: 20px; /* Margem abaixo do título */
+ color: #111; /* Cor preta escura do título */
 }
 .title-line {
-    width: 100px; /* Largura da linha divisória */
-    height: 3px; /* Espessura da linha */
-    background-color: #111; /* Cor preta escura da linha */
-    border: none; /* Remove qualquer borda padrão */
-    margin-bottom: 20px; /* Margem abaixo da linha */
+ width: 100px; /* Largura da linha divisória */
+ height: 3px; /* Espessura da linha */
+ background-color: #111; /* Cor preta escura da linha */
+ border: none; /* Remove qualquer borda padrão */
+ margin-bottom: 20px; /* Margem abaixo da linha */
 }
 .text-box p {
-    font-size: 18px; /* Tamanho da fonte do parágrafo */
-    font-weight: 700; /* Negrito */
-    line-height: 1.6; /* Espaçamento entre linhas confortável */
-    color: #000000; /* Cor preta do texto */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Sombra branca sutil para melhorar a legibilidade em fundos escuros */
+ font-size: 18px; /* Tamanho da fonte do parágrafo */
+ font-weight: 700; /* Negrito */
+ line-height: 1.6; /* Espaçamento entre linhas confortável */
+ color: #000000; /* Cor preta do texto */
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Sombra branca sutil para melhorar a legibilidade em fundos escuros */
 }
 
 /* --- SEÇÕES ABAIXO DO HERO --- */
 .content {
-    min-height: 50vh; /* Altura mínima de 50% da viewport */
-    padding: 50px 5%; /* Preenchimento interno (50px vertical, 5% horizontal) */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo na página */
+ min-height: 50vh; /* Altura mínima de 50% da viewport */
+ padding: 50px 5%; /* Preenchimento interno (50px vertical, 5% horizontal) */
+ max-width: 1200px; /* Largura máxima do conteúdo */
+ margin: 0 auto; /* Centraliza o conteúdo na página */
 }
 
 /* --- ESTILOS ESPECÍFICOS PARA PÁGINAS INTERNAS --- */
 
 /* Cor do link ativo para saber em qual página você está */
 .active-page {
-    color: #008080 !important; /* Cor Teal forçada para o link da página atual */
+ color: #008080 !important; /* Cor Teal forçada para o link da página atual */
 }
 
 /* 1. ESTILO HERO FAMÍLIA */
 #familia-hero {
-    background-image: url('Capturar.PNG'); /* Imagem de fundo específica para a página Família */
+ background-image: url('Capturar.PNG'); /* Imagem de fundo específica para a página Família */
  /* Configurações chave para alinhar lado a lado */
  display: flex; /* Habilita Flexbox */
  justify-content: space-between; /* Espaçamento entre texto e carrossel */
